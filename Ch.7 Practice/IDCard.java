@@ -19,6 +19,17 @@ public class IDCard extends Card
         super(n);
         idNumber = id;
     }
+    
+    public boolean equals( Object otherObject )
+    {
+        if( this.getClass() == otherObject.getClass() )
+        {
+            IDCard other = ( IDCard ) otherObject;
+            return getName().equals( other.getName() )
+                && idNumber.equals( other.idNumber );
+        }
+        return false;
+    }
 
     public String format()
     {
