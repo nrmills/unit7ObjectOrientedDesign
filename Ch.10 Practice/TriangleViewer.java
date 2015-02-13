@@ -1,4 +1,5 @@
-
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 //import javax.swing.JLabel;
 
@@ -15,9 +16,6 @@ public class TriangleViewer
     {
         frame = new JFrame();
         
-        MouseListener listener = new ClickListener();
-        frame.addMouseListener( listener );
-        
         frame.setSize( 500,500 );
         frame.setTitle( "Triangle Drawer" );
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
@@ -26,5 +24,10 @@ public class TriangleViewer
         frame.add( component );
         
         frame.setVisible( true );
+    }
+    
+    public static void main( String[] args )
+    {
+        TriangleViewer viewer = new TriangleViewer();
     }
 }
