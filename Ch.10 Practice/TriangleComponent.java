@@ -12,7 +12,7 @@ import java.awt.geom.Line2D;
 public class TriangleComponent extends JComponent
 {
     private int timesClicked = 0;
-
+    
     private int location1X;
     private int location1Y;
 
