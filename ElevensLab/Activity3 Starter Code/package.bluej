@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=100
 objectbench.width=658
-package.editor.height=400
+package.editor.height=398
 package.editor.width=560
-package.editor.x=956
-package.editor.y=599
+package.editor.x=55
+package.editor.y=642
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
@@ -12,8 +12,8 @@ package.showUses=true
 project.charset=US-ASCII
 target1.editor.height=1010
 target1.editor.width=900
-target1.editor.x=0
-target1.editor.y=0
+target1.editor.x=798
+target1.editor.y=5
 target1.height=50
 target1.name=Shuffler
 target1.naviview.expanded=false

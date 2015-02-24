@@ -92,15 +92,15 @@ public class Shuffler {
     public static void selectionShuffle(int[] values)
     {
         Random generator = new Random();
-        for( int i = 51; i < 0; i-- )
+        for( int i = values.length-1; i > 0; i-- )
         {
             int randPos = generator.nextInt(values.length);
-            //Card in the random Position
-            int card1 = values[randPos];
-            //Card in random position replaced by top card
-            values[randPos] = values[i];
-            //top card replaced by card in random position
-            values[i] = card1;
+            
+            int swappedCard = values[i];
+            
+            values[i] = values[randPos];
+            
+            values[randPos] = swappedCard;
         }
     }
 }
